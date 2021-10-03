@@ -1,0 +1,19 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - 'tmp/**/*'
+    - db/*.rb
+    - node_modules/**/*
+    - vendor/**/*
+    - Gemfile
+    - config/environments/*.rb
+  TargetRubyVersion: 3.0
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false

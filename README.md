@@ -4,8 +4,8 @@ This parser is a demo project that will help people to automate data extraction 
 ![](public/demo.gif)
 
 ## Todos
-- [ ] To parse data from both profile and translator pages
-- [ ] To save extracted data after manual review
+- [x] To parse data from both profile and translator pages
+- [x] To save extracted data after manual review
 - [ ] To figure out how to deal with unavailable or unreachable Proz website
 - [ ] To think about a queue for parsing requests
 - [ ] To dive deeper into the process to understand the best code architecture

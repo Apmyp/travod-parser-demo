@@ -1,41 +1,50 @@
 <div class="centered">
   <div class="link-extractor">
     <h1 class="link-extractor__header">Take a look on extracted data</h1>
-    <form class="link-extractor__form">
+     <%= form_with model: @linguist, url: create_linguist_extractor_index_path, class: 'link-extractor__form' do |form| %>
+
+      <% if @linguist.errors.any? %>
+        <% @linguist.errors.full_messages.each do |message|%>
+          <p class="link-extrator__error"><%= message %> </p>
+        <% end %>
+      <% end %>
 
       <div class="link-extractor__group">
-        <label for="" class="link-extractor__label">First name</label>
-        <input type="text" size="40" class="link-extractor__input">
+        <%= form.label :first_name, 'First name', class: 'link-extractor__label' %>
+        <%= form.text_field :first_name, class: 'link-extractor__input', size: 40 %>
       </div>
 
       <div class="link-extractor__group">
-        <label for="" class="link-extractor__label">Last name</label>
-        <input type="text" size="40" class="link-extractor__input">
+        <%= form.label :last_name, 'Last name', class: 'link-extractor__label' %>
+        <%= form.text_field :last_name, class: 'link-extractor__input', size: 40 %>
       </div>
 
       <div class="link-extractor__group">
-        <label for="" class="link-extractor__label">Country</label>
-        <input type="text" size="40" class="link-extractor__input">
+        <%= form.label :country, 'Country', class: 'link-extractor__label' %>
+        <%= form.text_field :country, class: 'link-extractor__input', size: 40 %>
       </div>
 
       <div class="link-extractor__group">
-        <label for="" class="link-extractor__label">Native language</label>
-        <input type="text" size="40" class="link-extractor__input">
+        <%= form.label :native_language, 'Native language', class: 'link-extractor__label' %>
+        <%= form.text_field :native_language, class: 'link-extractor__input', size: 40 %>
       </div>
 
       <div class="link-extractor__group">
-        <label for="" class="link-extractor__label">Target language</label>
-        <input type="text" size="40" class="link-extractor__input">
+        <%= form.label :target_language, 'Target language', class: 'link-extractor__label' %>
+        <%= form.text_field :target_language, class: 'link-extractor__input', size: 40 %>
       </div>
 
       <div class="link-extractor__group">
-        <label for="" class="link-extractor__label">Source</label>
-        <input type="text" size="40" class="link-extractor__input">
+        <%= form.label :source, 'Source', class: 'link-extractor__label' %>
+        <%= form.text_field :source, readonly: true, class: 'link-extractor__input', size: 40 %>
       </div>
 
       <div class="link-extractor__group">
-        <button class="link-extractor__button">Save</button>
+        <div class="link-extractor__wrapper">
+          <button class="link-extractor__button">Save</button>
+          <%= link_to 'Back', root_path, class: 'link' %>
+        </div>
       </div>
-    </form>
+    <% end %>
   </div>
 </div>

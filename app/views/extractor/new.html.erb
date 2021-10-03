@@ -6,8 +6,8 @@
       <% if @form.errors.any? %>
         <% @form.errors.full_messages.each do |message|%>
           <p class="link-extrator__error"><%= message %> </p>
-        <%end%>
-      <%end%>
+        <% end %>
+      <% end %>
 
       <%= form.label :link, 'Link to a Proz profile', class: 'link-extractor__label' %>
       <div class="link-extractor__wrapper">

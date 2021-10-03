@@ -42,6 +42,7 @@ body {
 
 .link-extractor__wrapper {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 
@@ -85,4 +86,26 @@ body {
 .link-extrator__error {
   color: tomato;
   font-size: 18px;
+}
+
+.link {
+  background-color: initial;
+  color: #226bfc;
+  text-decoration: none;
+  background-image: linear-gradient(#a0bffe,#a0bffe);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+  cursor: pointer;
+  transition: color .2s;
+  font-size: 16px;
+}
+
+.link:hover {
+  color: #095afc;
+  text-decoration: none;
+  background-image: linear-gradient(#226bfc,#226bfc);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 100% 1px;
 }

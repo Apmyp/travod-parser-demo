@@ -14,6 +14,7 @@ gem 'webpacker', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'excon', '>= 0.8.6'
+gem 'nokogiri', '>= 1.12.5'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

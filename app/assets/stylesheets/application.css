@@ -81,3 +81,8 @@ body {
 .link-extractor__group + .link-extractor__group {
   margin: 16px 0;
 }
+
+.link-extrator__error {
+  color: tomato;
+  font-size: 18px;
+}

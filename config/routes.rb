@@ -2,5 +2,5 @@
 
 Rails.application.routes.draw do
   root to: 'extractor#index'
-  resources :extractor, only: %i[index new create show]
+  resources :extractor, only: %i[index create show]
 end

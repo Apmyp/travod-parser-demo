@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 describe Parsers::TranslatorParser do
-
   context 'with profile link' do
     let(:test_link) { 'https://www.proz.com/profile/52171' }
     let(:profile_hash) do
